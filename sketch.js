@@ -30,8 +30,8 @@ function anomalyCode(x) {
 }
 
 function ReLU(x) {
-  if (x < 0) return x*0.1;
-  else return x
+  if (x < 0) return 0;
+  else return x;
 }
 
 module.exports = {
