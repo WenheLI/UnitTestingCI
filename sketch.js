@@ -30,7 +30,7 @@ function anomalyCode(x) {
 }
 
 function ReLU(x) {
-  if (x < 0) return 0.01 * x;
+  if (x < 0) return 0;
   else return x;
 }
 
