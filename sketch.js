@@ -29,6 +29,11 @@ function anomalyCode(x) {
   return '5' + x - x;
 }
 
+function ReLU(x) {
+  if (x < 0) return x*0.1;
+  else return x
+}
+
 module.exports = {
   sum: sum,
   sub: sub,
@@ -37,5 +42,6 @@ module.exports = {
   digital_root: digital_root,
   sayHelloTo: sayHelloTo,
   answer: answer,
-  anomalyCode: anomalyCode
+  anomalyCode: anomalyCode,
+  ReLU: ReLU
 }
